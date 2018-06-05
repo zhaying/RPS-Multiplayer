@@ -26,7 +26,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
           crossorigin="anonymous"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 </head>
 
 <body>
@@ -35,10 +35,34 @@
       <header id="header" class="col-lg-12 col-md-12">
       </header>
       <section id="mainSection" class="col-lg-12 mt-5">
+        <div id="player1Div" class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="player1" id="p1Rock" autocomplete="off" value="0"> rock
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="player1" id="p1Paper" autocomplete="off" value="1"> paper
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="player1" id="p1Scissors" autocomplete="off" value="2"> Scissors
+          </label>
+        </div>
+        <div id="player2Div" class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="player2" id="p2Rock" autocomplete="off" value="0"> rock
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="player2" id="p2Paper" autocomplete="off" value="1"> paper
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="player2" id="p2Scissors" autocomplete="off" value="2"> Scissors
+          </label>
+        </div>
+
       </section>
     </div>
   </div>
   <!-- SCRIPTS CUSTOM -->
+  <script src="assets/js/config.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
